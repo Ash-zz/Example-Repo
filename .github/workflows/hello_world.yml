@@ -4,8 +4,8 @@ name: Hello World Workflow
 #This section defines when the WF is triggered.
 On:
   Push: # Trigger when pushed
-    branches:
-      - main # on main push  
+  branches: ["main"]
+
   workflow-dispatch:
 
   # This is the main jobs section - each job will run it's own virtual environment

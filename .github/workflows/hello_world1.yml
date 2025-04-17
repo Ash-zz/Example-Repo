@@ -4,7 +4,7 @@ name: Hello World Workflow
 #This section defines when the WF is triggered.
 On:
   Push: # Trigger when pushed
-  branches: ["main"]
+    branches: ["main"]
 
   workflow-dispatch:
 

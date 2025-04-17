@@ -5,14 +5,12 @@ name: Hello World Workflow
 On:
   Push: # Trigger when pushed
     branches:
-      - main # on main push
-  Pull-request:
-  
+      - main # on main push  
   workflow-dispatch:
 
   # This is the main jobs section - each job will run it's own virtual environment
   jobs:
-    hello_world: # Name of the job
+    say_hello: # Name of the job
       runs-on: ubuntu-latest # The OS of the VE
       steps: # Our job sequence
         - name: Checkout code
